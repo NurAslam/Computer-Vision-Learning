@@ -36,7 +36,7 @@
 # OTSU
 import cv2
 
-image_read = cv2.imread('./test.jpeg', cv2.IMREAD_GRAYSCALE)
+image_read = cv2.imread('../source/download (1) copy.jpeg', cv2.IMREAD_GRAYSCALE)
 cv2.imshow("treshold", image_read)
 
 _,binary_image = cv2.threshold(image_read,0, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
